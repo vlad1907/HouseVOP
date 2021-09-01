@@ -1,0 +1,40 @@
+@font-face {
+
+    font-family: 'PostNoBillsJaffna';
+    src: url('/assets/fonts/postnobillsjaffna/PostNoBillsJaffna-Regular.ttf');
+    font-weight:normal;
+    font-display:swap;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'PostNoBillsJaffna';
+    color: 000;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul, li {
+    display: block;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url('/assets/images/header-bg.jpg') no-repeat center top;
+}
+
+   
