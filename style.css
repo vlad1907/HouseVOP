@@ -37,4 +37,44 @@ ul, li {
     background: url('/assets/images/header-bg.jpg') no-repeat center top;
 }
 
-   
+header a {
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Raleway';
+}
+
+.menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.logo h2 {
+    font-size: 36px;
+    font-family: 'PostNoBillsJaffna';
+    font-style: normal;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.logo p {
+    font-size: 12px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.nav {
+    display: flex;
+}
