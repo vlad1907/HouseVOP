@@ -6,75 +6,180 @@
     font-display:swap;
     font-style: normal;
 }
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'PostNoBillsJaffna';
-    color: 000;
-    font-size: 16px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-ul, li {
-    display: block;
-}
-
-.container {
-    width: 1170px;
-    margin: 0 auto;
-}
-
-.header {
-    background: url('/assets/images/header-bg.jpg') no-repeat center top;
-}
-
-header a {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
     color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 400;
 }
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1110px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/* ---------------------------------------------------------------------------------------- */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    min-height: 130px;
+    align-items: center;
+}
+.header__logo {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: PostNoBillsJaffna;
+    color: inherit;
+    line-height: 150%;
+}
+p {
+    font-size: 12px;
+    font-family: Raleway;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 125%;
+}
+.header__menu {
+    margin: 0px 0px 0px 435px;
+}
+@media (max-width: 1124px){
+   .header__menu {
+    margin: 0px 0px 0px 80px;
+   }
+}
+@media (max-width: 767px){
+    .header__menu {
+     margin: 0px 0px 0px 40px;
+    }
+ }
 
 .menu {
+    padding: 5px 0;
+}
+.menu__list {
+    flex-wrap: wrap;
     display: flex;
-    font-family: 'Raleway';
+}
+.menu__item {
+    
+}
+.menu__item:not(:last-child){
+    margin: 0px 39px 0px 0px;
+}
+.menu__link {
+    line-height: 130%;
+    color:inherit;
+}
+/* ---------------------------------------------------------------------------------------- */
+.page {
+    flex: 1 1 auto;
+}
+.page__main-block {
+    
+}
+/* ---------------------------------------------------------------------------------------- */
+.footer {
+
+}
+/* ---------------------------------------------------------------------------------------- */
+.page {
+   
+}
+.page__main-block {
+    position: relative;
+}
+.main-block {
+  
+}
+.main-block__container {
+    padding: 300px 0px 74px 0px;
+    position: relative;
+    z-index: 2;
+    max-width: 556px;
 }
 
-.menu li a {
-    text-transform: uppercase;
+.main-block__title {
+    font-size: 48px;
+    font-family: Playfair Display;
+    line-height: 130%;
+    font-weight: 700;
+    color: #D4C17F;
+    text-align: center;
+
+}
+.main-block__mouse {
+    position: relative;
+    padding: 100px 0px 0px 0px;
+    text-align: center;
+    z-index: 2;
+}
+.main-block__contacts {
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+.main-block__adress {
     text-decoration: none;
-    font-size: 14px;
 }
-
-.menu li {
-    margin-right: 40px;
-}
-
-.logo {
-    color: #FFFFFF;
-}
-
-.logo h2 {
-    font-size: 36px;
-    font-family: 'PostNoBillsJaffna';
-    font-style: normal;
-    font-weight: 600;
-    text-transform: none;
-}
-
-.logo p {
-    font-size: 12px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: normal;
-}
-
-.nav {
-    display: flex;
+.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
