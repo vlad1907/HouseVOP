@@ -132,6 +132,8 @@ p {
 .page__main-block {
     
 }
+.page__about {
+}
 /* ---------------------------------------------------------------------------------------- */
 .footer {
 
@@ -175,6 +177,7 @@ p {
     align-items: center;
     justify-content: center;
     padding-top: 200px;
+    padding-bottom: 74px;
     /* line-height: 116px; */
    
 }
@@ -192,4 +195,36 @@ p {
     color: inherit;
     font-size: 18px;
     margin: 0px 100px 0px 0px;
+}
+/*-----------------------------------------------------------------------*/
+.page__about {
+    background: #242B33;
+}
+.about {
+}
+.about__container {
+    padding-top: 120px;
+}
+.about__body {
+    display: flex;
+    margin: 0px -15px;
+}
+.about__column {
+    padding: 0px 15px;
+    flex: 0 1 44.444%;
+}
+.about__item {
+}
+.item-about {
+    text-align: center
+}
+.item-about__icon {
+    
+}
+.item-about__title {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 135%;
+    padding-top: 53px;
 }
