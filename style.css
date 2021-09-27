@@ -280,9 +280,11 @@ p {
 }
 .appartments__img-1 {
     background: url(/assets/images/loft3.1.jpg);
+    background-size: cover;
     width: 530px;
     height: 315px;
 }
+
 .appartments__img-2 {
     background: url(/assets/images/loft2.1.jpg);
     width: 530px;
@@ -299,7 +301,6 @@ p {
     height: 315px;
 }
 .appartments__text {
-    /* font-family: Raleway; */
     font-weight: 400;
     font-size: 24px;
     line-height: 116%;
@@ -317,8 +318,8 @@ p {
 /* ---------------------------------------------------------------------------------------- */
 .page__form {
     background: center no-repeat url(/assets/images/form-bg.jpg);
-    background-attachment: fixed;
-    max-width: 1920px;
+    background-size: cover;
+    /* max-width: 1920px; */
     height: 560px;
 }
 .form__container {
@@ -421,24 +422,28 @@ p {
 .video__container {
     display: flex;
     justify-content: center;
+   
 }
 .video__prewiew {
-    background: url(/assets/images/video.jpg);
-    background-position: center center;
-    /* background-attachment:fixed; */
-    background-size: cover;
-    /* width: 719px;
-    height: 650px; */
-    text-align: center;
+    background-image: url(/assets/images/video.jpg);
+    /* background-position: center center;
+    background-size: cover; */
+    background-size: 100% 100%;
+  /* position: absolute; */
 }
-
-/* .vide__parr {
+.video__parr {
     width: 719px;
-    height: 650px; */
-
+    height: 650px;
 }
 .video__play {
-   padding-top: 275px;
+   /* padding-top: 275px; */
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   /* width: 719px;
+   height: 650px; */
+    
+  
 }
 @media (max-width: 1068px){
     .video__container{
@@ -462,8 +467,22 @@ p {
     padding-top: 180px;
     padding-bottom: 100px;
 }
-.map__geo {
+
+.map__responsive {
+    width: 1110px;
+    height: 358px;
+    overflow:hidden;
+    position:relative;
+
 }
+.map__responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:relative;
+    position: absolute;
+} 
 @media (max-width: 1066px) {
     .map__title {
         text-align: center;
