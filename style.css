@@ -67,6 +67,42 @@ body {
     left: 0;
     object-fit: cover;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+    box-shadow: 0 0 20px rgb(241, 241, 241);
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color:#D4C17F;
+}
+nav.header__menu ul li a {
+    position: relative;
+}
+nav.header__menu ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background:#D4C17F;
+  height: 1px;
+}
+nav.header__menu ul li a:hover:after {
+  width: 100%;
+}
+
 /* ------------------ШАПКА---------------------------------------------------------------------- */
 .header {
     position: absolute;
@@ -179,8 +215,8 @@ p {
     /* line-height: 116px; */
    
 }
-.main-block__adress {
-    
+.main-block__contacts a:hover {
+    color: #D4C17F;
 }
 .main-block__image {
     position: absolute;
@@ -281,7 +317,6 @@ p {
     width: 530px;
     height: 315px;
 }
-
 .appartments__img-2 {
     background: url(/assets/images/loft2.1.jpg);
     width: 530px;
@@ -312,6 +347,17 @@ p {
         justify-content: center;
     }
 }
+/*---------------------------------------*/
+.dcr {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .dcr:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 /* -------------------------ХОТИТЕ ПОСМОТРЕТЬ?--------------------------------------------------------------- */
 .page__form {
     background: center no-repeat url(/assets/images/form-bg.jpg);
@@ -360,9 +406,9 @@ p {
     border: none;
     color: #BEBEBE;
 }
-.input::placeholder {
+input::placeholder{
     color: #BEBEBE;
-}
+  }
 .form__items__text {
     width: 255px;
     height: 28px;
@@ -395,12 +441,13 @@ p {
     .form__title {
         display: flex;
         justify-content: center;
+        padding-top: 100px;
     }
     .form__column {
         flex-direction: column;
      }
     .form__text {
-       margin-bottom: 50px;
+       /* margin-bottom: 50px; */
     }
     .page__form {
         display: flex;
@@ -420,6 +467,8 @@ p {
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 719px;
+    height: 650px;
 }
 .video__prewiew {
    background-image: url(/assets/images/video.jpg);
@@ -429,7 +478,8 @@ p {
 }
 
 .video__play {
-   
+    padding-top: 275px;
+    cursor: pointer;
 }
 
 
@@ -445,10 +495,6 @@ p {
 .page__map {
     background:  #242B33;
 }
-.map__container {
-}
-.map__columns {
-}
 .map__title {
     font-family: Playfair Display;
     font-weight: 700;
@@ -459,22 +505,16 @@ p {
     padding-bottom: 100px;
 }
 
-.map__responsive {
-    width: 1110px;
-    height: 358px;
-    overflow:hidden;
-    position:relative;
-
-}
-.map__responsive iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:relative;
-    position: absolute;
-} 
-@media (max-width: 1066px) {
+.map__title {
+    color: #D4C17F;
+  }
+  
+  .map__map {
+    max-width: 100%;
+    width: 100%;
+    background: #626262;
+  }
+  @media (max-width: 1066px) {
     .map__title {
         text-align: center;
     }
@@ -484,6 +524,7 @@ p {
     background:  #242B33;
 }
 .questions__container {
+    padding-bottom: 180px;
 }
 .questions__title {
     font-family: Playfair Display;
@@ -540,6 +581,8 @@ p {
 .footer__container {
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .footer__logo {
@@ -549,10 +592,9 @@ p {
 .footer__list {
 }
 .footer__item {
-}
-.footer__item {
     list-style: none;
     color: #fff;
+    margin: 15px 0 0 0;
 }
 .footer__item a {
     text-decoration: none;
@@ -560,16 +602,25 @@ p {
 }
   
 .footer__item i {
-    font-size: 50px;
-  }
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.footer__item i:hover {
+    color: #D4C17F;
+}
+.footer__item_mail a {
+    color:#D4C17F;
+}
+.footer__item a:hover {
+    color: #D4C17F;
+}
 
-.icon-youtube {
-}
-.icon-vk {
 
-}
-.icon-facebook-f {
-}
-.icon-instagram {
+@media (max-width:651px) {
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 

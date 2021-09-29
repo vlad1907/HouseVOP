@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/font-awesome_min.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>HouseVOP</title>
 </head>
 
@@ -113,17 +113,17 @@
                     <div class="appartments__body">
 
 
-                        <div class="appartments__img-1">
+                        <div class="appartments__img-1 dcr">
                             <div class="appartments__text">Лофт — 3 этажа</div>
                         </div>
 
-                        <div class="appartments__img-2">
+                        <div class="appartments__img-2 dcr">
                             <div class="appartments__text">Лофт — 2 этажа</div>
                         </div>
-                        <div class="appartments__img-3">
+                        <div class="appartments__img-3 dcr">
                             <div class="appartments__text">Лофт — 3 этажа</div>
                         </div>
-                        <div class="appartments__img-4">
+                        <div class="appartments__img-4 dcr">
                             <div class="appartments__text">Лофт — 2 этажа</div>
                         </div>
                     </div>
@@ -175,14 +175,11 @@
             </section>
             <section class="page__map map">
                 <div class="map__container _container">
-                    <div class="map__columns">
-                        <div class="map__title">Район на карте</div>
-                        <div class="map__responsive">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42910.11972773869!2d28.992122950000002!3d47.76433375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1632499432851!5m2!1sru!2s"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
+                    <h1 class="map__title">Район на карте</h1>
+                    <iframe class="map__map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2442617348192!2d30.337639215590546!3d59.94468166857377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Nw!5e0!3m2!1sru!2s!4v1613303402421!5m2!1sru!2s"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </section>
             <section class="page__questions questions">
@@ -254,12 +251,14 @@
                     <li class="footer__item">Адрес: Наб. реки Фонтанки 10-15</li>
                     <li class="footer__item">Телефон: <a href="tel:+88121234567">8 (812) 123-45-67</a></li>
                     <li class="footer__item">Отдел продаж: 10:00 - 20:00</li>
-                    <li class="footer__item">E-mail: <a href="mailto:vip@housevip.ru">vip@housevip.ru</a></li>
+                    <li class="footer__item_mail">E-mail: <a href="mailto:vip@housevip.ru"
+                            class="footer__mail">vip@housevip.ru</a>
+                    </li>
                     <li class="footer__item">
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-vk"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-youtube-play"></i>
+                        <i class="fa fa-vk"></i>
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-instagram"></i>
                     </li>
                 </ul>
             </div>
