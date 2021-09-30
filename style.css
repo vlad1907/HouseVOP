@@ -102,8 +102,15 @@ nav.header__menu ul li a:after {
 nav.header__menu ul li a:hover:after {
   width: 100%;
 }
+button:hover {
+    background-color: rgba(206, 173, 66, 0.966);
+    color:rgba(0, 0, 0, 0.87);
+}
+button:active {
+    background-color:#eee;
+}
 
-/* ------------------ШАПКА---------------------------------------------------------------------- */
+/* ------------------ HEADER ---------------------------------------------------------------------- */
 .header {
     position: absolute;
     width: 100%;
@@ -151,9 +158,6 @@ p {
     flex-wrap: wrap;
     display: flex;
 }
-.menu__item {
-    
-}
 .menu__item:not(:last-child){
     margin: 0px 40px 0px 0px;
 }
@@ -165,21 +169,11 @@ p {
 .page {
     flex: 1 1 auto;
 }
-.page__main-block {
-    
-}
-.page__about {
-}
 
-/* ---------------ПРЕВЬЮ------------------------------------------------------------------------- */
-.page {
-   
-}
+/* --------------- MAIN ------------------------------------------------------------------------- */
+
 .page__main-block {
     position: relative;
-}
-.main-block {
-  
 }
 .main-block__container {
     padding: 300px 0px 74px 0px;
@@ -187,7 +181,6 @@ p {
     z-index: 2;
     max-width: 556px;
 }
-
 .main-block__title {
     font-size: 48px;
     font-family: Playfair Display;
@@ -195,7 +188,6 @@ p {
     font-weight: 700;
     color: #D4C17F;
     text-align: center;
-
 }
 .main-block__mouse {
     position: relative;
@@ -212,8 +204,6 @@ p {
     justify-content: center;
     padding-top: 200px;
     padding-bottom: 74px;
-    /* line-height: 116px; */
-   
 }
 .main-block__contacts a:hover {
     color: #D4C17F;
@@ -243,11 +233,9 @@ p {
         margin: 0px 10px 0px 0px;
     }
 }
-/* -------------------------ИКОНКИ--------------------------------------------------------------- */
+/* ------------------------- ICONS --------------------------------------------------------------- */
 .page__about {
     background: #242B33;
-}
-.about {
 }
 .about__container {
     padding-top: 120px;
@@ -259,7 +247,6 @@ p {
     justify-content: center;
     margin: 0px -15px;
 }
-
 .about__column {
     padding: 0px 15px;
     flex: 0 1 22.222%;
@@ -282,9 +269,6 @@ p {
 .item-about {
     text-align: center
 }
-.item-about__icon {
-    
-}
 .item-about__title {
     font-family: Roboto;
     font-weight: 300;
@@ -292,12 +276,10 @@ p {
     line-height: 135%;
     padding-top: 53px;
 }
-/* ---------------------КВАРТИРЫ------------------------------------------------------------------- */
-
+/* --------------------- APPARTMENTS ------------------------------------------------------------------- */
 .page__appartments {
     background-color: #242B33;
 }
-
 .header-block__title {
     padding-top: 120px;
     color: #D4C17F;
@@ -353,20 +335,16 @@ p {
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-  }
-  .dcr:hover {
+}
+.dcr:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
-/* -------------------------ХОТИТЕ ПОСМОТРЕТЬ?--------------------------------------------------------------- */
+}
+/* ------------------------- BODY FORM --------------------------------------------------------------- */
 .page__form {
     background: center no-repeat url(/assets/images/form-bg.jpg);
     background-size: cover;
-    /* max-width: 1920px; */
     height: 560px;
-}
-.form__container {
-
 }
 .form__column {
     display: flex;
@@ -380,10 +358,8 @@ p {
     color: #D4C17F;
     padding-top: 180px;
     padding-bottom: 50px;
-    
 }
 .form__text {
-    /* font-family: Raleway; */
     font-size: 16px;
     line-height: 150%;
     width: 535px;
@@ -395,8 +371,6 @@ p {
     justify-content: space-between;
     width: 530px;
 }
-.form__items {
-}
 .input {
     width: 255px;
     height: 50px;
@@ -406,9 +380,9 @@ p {
     border: none;
     color: #BEBEBE;
 }
-input::placeholder{
+input::placeholder {
     color: #BEBEBE;
-  }
+}
 .form__items__text {
     width: 255px;
     height: 28px;
@@ -427,7 +401,6 @@ input::placeholder{
     font-weight: 700;
     line-height: 168%;
     border: none;
-    /* margin-top: 30px; */
 }
 .btn-f:hover {
     background-color: rgb(151, 132, 63);
@@ -446,23 +419,15 @@ input::placeholder{
     .form__column {
         flex-direction: column;
      }
-    .form__text {
-       /* margin-bottom: 50px; */
-    }
     .page__form {
         display: flex;
         flex-direction: column;
     }
-    .form__container {
-     
-    }
 }
-/* ----------------------ВИДЕО------------------------------------------------------------------ */
-
+/* ---------------------- VIDEO ------------------------------------------------------------------ */
 .page__video {
     background: #242B33;
 }
-
 .video__container {
     display: flex;
     justify-content: center;
@@ -476,7 +441,6 @@ input::placeholder{
    width: 100%;
    height: 100%;
 }
-
 .video__play {
     padding-top: 275px;
     cursor: pointer;
@@ -488,10 +452,7 @@ input::placeholder{
         padding-top: 50px;
     }
 } 
-
-
-
-/* -------------------------КАРТА--------------------------------------------------------------- */
+/* ------------------------- MAP --------------------------------------------------------------- */
 .page__map {
     background:  #242B33;
 }
@@ -504,7 +465,6 @@ input::placeholder{
     padding-top: 180px;
     padding-bottom: 100px;
 }
-
 .map__title {
     color: #D4C17F;
   }
@@ -519,7 +479,7 @@ input::placeholder{
         text-align: center;
     }
 }
-/* ----------------------------ЕСТЬ ВОПРОСЫ?------------------------------------------------------------ */
+/* ---------------------------- FOOTER FORM ------------------------------------------------------------ */
 .page__questions {
     background:  #242B33;
 }
@@ -541,14 +501,9 @@ input::placeholder{
 }
 .questions__text {
     margin: 10px 35px 0px 0px;
-    /* width: 255px;
-    height: 50px; */
     text-align: center;
     font-size: 13px;
     line-height: 123%;
-    
-}
-.questions__item {
 }
 .questions__item:not(:last-child) {
     margin: 0px 30px 0px 0px;
@@ -572,9 +527,8 @@ input::placeholder{
     .questions__text {
         margin: 0px 0px 0px 0px;
     }
-   
 }
-/* ---------------------------- ФУТЕР ------------------------------------------------------------ */
+/* ---------------------------- FOOTER ------------------------------------------------------------ */
 .footer {
     background: #2D343C;
 }
@@ -583,13 +537,6 @@ input::placeholder{
     justify-content: space-between;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-
-.footer__logo {
-}
-.header__logo {
-}
-.footer__list {
 }
 .footer__item {
     list-style: none;
@@ -600,7 +547,6 @@ input::placeholder{
     text-decoration: none;
     color: #fff;
 }
-  
 .footer__item i {
     font-size: 30px;
     margin-right: 15px;
@@ -615,7 +561,6 @@ input::placeholder{
 .footer__item a:hover {
     color: #D4C17F;
 }
-
 
 @media (max-width:651px) {
     .footer__container {
