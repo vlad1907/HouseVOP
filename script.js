@@ -1,5 +1,5 @@
 "use strict"
-
+/*---------------- BURGER -----------------*/
 const menuHeader = document.querySelector('.header__menu');
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
@@ -11,7 +11,7 @@ if (iconMenu) {
     })
 }
 
-
+/*---------------- SCROLL -----------------*/
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLinks => {
