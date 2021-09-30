@@ -134,6 +134,9 @@ body._lock {
     color: inherit;
     line-height: 150%;
 }
+.header__logo:hover {
+    color:#D4C17F;
+}
 p {
     font-size: 12px;
     font-family: Raleway;
@@ -419,6 +422,9 @@ input::placeholder {
         display: flex;
         justify-content: center;
         padding-top: 100px;
+    }
+    .form__text {
+        margin-bottom: 30px;
     }
     .form__column {
         flex-direction: column;
