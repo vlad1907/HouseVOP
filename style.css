@@ -356,7 +356,31 @@ p {
 .form__column {
     display: flex;
     justify-content: space-between;
+    /* padding-bottom: 120px; */
 }
+.form__left {
+    display: flex;
+    align-items: center;
+}
+.form__right__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form__right__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.form__right__text {
+    max-width: 255px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.form__right__top > input:first-child {
+    margin-right: 30px;
+  }
 .form__title {
     font-family: Playfair Display;
     font-weight: 700;
@@ -366,17 +390,12 @@ p {
     padding-top: 180px;
     padding-bottom: 50px;
 }
-.form__text {
+.form__left__text {
+    max-width: 535px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 150%;
-    width: 535px;
-    height: 114px;
-}
-.form__body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 530px;
+
 }
 .input {
     width: 255px;
