@@ -283,7 +283,7 @@ p {
     line-height: 135%;
     padding-top: 53px;
 }
-/* --------------------- APPARTMENTS ------------------------------------------------------------------- */
+/* --------------------- APPARTMENTS -------------------------не резинит------------------------------------------ */
 .page__appartments {
     background-color: #242B33;
 }
@@ -407,15 +407,6 @@ p {
 input::placeholder {
     color: #BEBEBE;
 }
-/* .form__items__text {
-    width: 255px;
-    height: 28px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 123%;
-    margin-top: 40px;
-
-} */
 .btn {
     width: 255px;
     height: 50px;
@@ -469,7 +460,7 @@ input::placeholder {
         margin-bottom: 30px;
       }
 }
-/* ---------------------- VIDEO ------------------------------------------------------------------ */
+/* ---------------------- VIDEO --------------------------не резинит---------------------------------------- */
 .page__video {
     background: #242B33;
 }
@@ -685,16 +676,6 @@ input::placeholder {
     .header__menu {
         margin: 0px 0px 0px 0px;
     }
-    /* .header__menu::before {
-        z-index: 2;
-        content: "";
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 110px;
-        background:  #242B33;
-    } */
     .menu__item  {
         padding-top: 30px;
     }
