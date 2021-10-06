@@ -284,7 +284,7 @@ p {
     line-height: 135%;
     padding-top: 53px;
 }
-/* --------------------- APPARTMENTS ------------------------------------------------------------------- */
+/* --------------------- APPARTMENTS -------------------------не резинит------------------------------------------ */
 .page__appartments {
     background-color: #242B33;
 }
@@ -354,16 +354,30 @@ p {
 .page__form {
     background: center no-repeat url(/assets/images/form-bg.jpg);
     background-size: cover;
-    height: 560px;
+}
+.form__title {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    color: #D4C17F;
+    padding-top: 180px;
+    padding-bottom: 50px;
 }
 .form__column {
     display: flex;
     justify-content: space-between;
-    /* padding-bottom: 120px; */
+    padding-bottom: 120px;
 }
 .form__left {
     display: flex;
     align-items: center;
+}
+.form__left__text {
+    max-width: 535px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 150%;
 }
 .form__right__top {
     display: flex;
@@ -385,6 +399,7 @@ p {
 .form__right__top > input:first-child {
     margin-right: 30px;
   }
+<<<<<<< HEAD
 .form__title {
     font-family: Playfair Display;
     font-weight: 700;
@@ -402,6 +417,8 @@ p {
     font-family: Raleway;
     text-transform: none;
 }
+=======
+>>>>>>> 73ff63d1ebb0744da59c258859f49a76d0403986
 .input {
     width: 255px;
     height: 50px;
@@ -413,15 +430,6 @@ p {
 }
 input::placeholder {
     color: #BEBEBE;
-}
-.form__items__text {
-    width: 255px;
-    height: 28px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 123%;
-    margin-top: 40px;
-
 }
 .btn {
     width: 255px;
@@ -458,6 +466,7 @@ input::placeholder {
         flex-direction: column;
     }
 }
+<<<<<<< HEAD
 @media (max-width: 560px) {
     .form__right__top {
         flex-wrap: wrap;
@@ -481,6 +490,27 @@ input::placeholder {
     }
     }
 /* ---------------------- VIDEO ------------------------------------------------------------------ */
+=======
+@media (max-width: 570px) {
+    .form__right__top {
+        flex-direction: column;
+      }
+    
+    .form__right__bottom {
+        flex-direction: column;
+      }
+    
+    .form__right__top > input:first-child {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    
+    .form__right__text {
+        margin-bottom: 30px;
+      }
+}
+/* ---------------------- VIDEO --------------------------не резинит---------------------------------------- */
+>>>>>>> 73ff63d1ebb0744da59c258859f49a76d0403986
 .page__video {
     background: #242B33;
 }
@@ -699,16 +729,6 @@ input::placeholder {
     .header__menu {
         margin: 0px 0px 0px 0px;
     }
-    /* .header__menu::before {
-        z-index: 2;
-        content: "";
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 110px;
-        background:  #242B33;
-    } */
     .menu__item  {
         padding-top: 30px;
     }
