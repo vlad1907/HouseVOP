@@ -226,6 +226,7 @@ p {
     color: inherit;
     font-size: 18px;
     margin: 0px 100px 0px 0px;
+    padding-left: 15px;
 }
 .main-block__phone {
     padding-left: 100px;
@@ -315,11 +316,13 @@ p {
     background: url(/assets/images/loft3.2.jpg);
     width: 530px;
     height: 315px;
+    margin: 30px 0 0 0;
 }
 .appartments__img-4 {
     background: url(/assets/images/loft2.2.jpg);
     width: 530px;
     height: 315px;
+    margin: 30px 0 0 0;
 }
 .appartments__text {
     font-weight: 400;
@@ -377,6 +380,7 @@ p {
     max-width: 255px;
     text-align: center;
     margin-bottom: 0;
+    text-transform: none;
 }
 .form__right__top > input:first-child {
     margin-right: 30px;
@@ -395,7 +399,8 @@ p {
     margin-bottom: 0;
     font-size: 16px;
     line-height: 150%;
-
+    font-family: Raleway;
+    text-transform: none;
 }
 .input {
     width: 255px;
@@ -442,7 +447,7 @@ input::placeholder {
         justify-content: center;
         padding-top: 100px;
     }
-    .form__text {
+    .form__left__text {
         margin-bottom: 30px;
     }
     .form__column {
@@ -453,6 +458,28 @@ input::placeholder {
         flex-direction: column;
     }
 }
+@media (max-width: 560px) {
+    .form__right__top {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .form__right__top input {
+        margin-top: 10px;
+    }
+    .form__right__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .form__right__bottom button {
+        margin-top: 10px;
+    }
+    .form__right__top > input:first-child {
+        margin-right: 0;
+      }
+    .page__form {
+        height: 100%;
+    }
+    }
 /* ---------------------- VIDEO ------------------------------------------------------------------ */
 .page__video {
     background: #242B33;
@@ -580,6 +607,9 @@ input::placeholder {
     font-size: 30px;
     margin-right: 15px;
     cursor: pointer;
+}
+.footer__item_mail {
+    margin: 15px 0 0 0;
 }
 .footer__item i:hover {
     color: #D4C17F;
