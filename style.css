@@ -231,12 +231,12 @@ p {
 .main-block__phone {
     padding-left: 100px;
 }
-@media(max-width: 704px){
+@media(max-width: 734px){
     .main-block__phone {
         padding-left: 0px;
     }
 }
-@media(max-width: 604px){
+@media(max-width: 634px){
     .main-block__cont {
         margin: 0px 10px 0px 0px;
     }
@@ -284,7 +284,7 @@ p {
     line-height: 135%;
     padding-top: 53px;
 }
-/* --------------------- APPARTMENTS -------------------------не резинит------------------------------------------ */
+/* --------------------- APPARTMENTS ------------------------------------------------------------------- */
 .page__appartments {
     background-color: #242B33;
 }
@@ -295,47 +295,32 @@ p {
     font-weight: 700;
     font-family: Playfair Display;
 }
+.appartments__body img {
+    width: 100%;
+    max-width: 535px;
+}
 .appartments__body {
-    padding-top: 100px;
+    margin-top: 100px;
+}
+.appartments__body__top, .appartments__body__bottom {
     display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 }
-.appartments__img-1 {
-    background: url(/assets/images/loft3.1.jpg);
-    background-size: cover;
-    width: 530px;
-    height: 315px;
+.appartments__body__bottom {
+    padding-top: 30px;
 }
-.appartments__img-2 {
-    background: url(/assets/images/loft2.1.jpg);
-    width: 530px;
-    height: 315px;
-}
-.appartments__img-3 {
-    background: url(/assets/images/loft3.2.jpg);
-    width: 530px;
-    height: 315px;
-    margin: 30px 0 0 0;
-}
-.appartments__img-4 {
-    background: url(/assets/images/loft2.2.jpg);
-    width: 530px;
-    height: 315px;
-    margin: 30px 0 0 0;
-}
-.appartments__text {
+.appartments__body span {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
     font-weight: 400;
     font-size: 24px;
     line-height: 116%;
-    margin: 250px 0px 5px 50px;
 }
-@media (max-width: 1090px) {
-    .appartments__body {
-       justify-content: center;
-     }
-    .header-block__title {
-        display: flex;
+@media (max-width: 1110px) {
+    .appartments__body__top, .appartments__body__bottom {
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
@@ -399,7 +384,6 @@ p {
 .form__right__top > input:first-child {
     margin-right: 30px;
   }
-<<<<<<< HEAD
 .form__title {
     font-family: Playfair Display;
     font-weight: 700;
@@ -417,8 +401,6 @@ p {
     font-family: Raleway;
     text-transform: none;
 }
-=======
->>>>>>> 73ff63d1ebb0744da59c258859f49a76d0403986
 .input {
     width: 255px;
     height: 50px;
@@ -466,14 +448,19 @@ input::placeholder {
         flex-direction: column;
     }
 }
-<<<<<<< HEAD
 @media (max-width: 560px) {
     .form__right__top {
         flex-wrap: wrap;
         justify-content: center;
     }
     .form__right__top input {
-        margin-top: 10px;
+        margin: 10px 0px 0px 10px;
+    }
+    .form__right__bottom p {
+        margin: 0px 0px 0px 10px;
+    }
+    .form__right__bottom button {
+        margin: 0px 0px 0px 10px;
     }
     .form__right__bottom {
         flex-wrap: wrap;
@@ -490,54 +477,28 @@ input::placeholder {
     }
     }
 /* ---------------------- VIDEO ------------------------------------------------------------------ */
-=======
-@media (max-width: 570px) {
-    .form__right__top {
-        flex-direction: column;
-      }
-    
-    .form__right__bottom {
-        flex-direction: column;
-      }
-    
-    .form__right__top > input:first-child {
-        margin-bottom: 15px;
-        margin-right: 0;
-      }
-    
-    .form__right__text {
-        margin-bottom: 30px;
-      }
-}
-/* ---------------------- VIDEO --------------------------не резинит---------------------------------------- */
->>>>>>> 73ff63d1ebb0744da59c258859f49a76d0403986
 .page__video {
     background: #242B33;
 }
 .video__container {
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 719px;
-    height: 650px;
+}
+.video_bg {
+    width: 100%;
+    max-width: 719px;
 }
 .video__prewiew {
-   background-image: url(/assets/images/video.jpg);
-   background-size: cover;
-   width: 100%;
-   height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
-.video__play {
-    padding-top: 275px;
-    cursor: pointer;
+.video__btn {
+    position: absolute;
 }
 
 
-@media (max-width: 1068px){
-    .video__container{
-        padding-top: 50px;
-    }
-} 
 /* ------------------------- MAP --------------------------------------------------------------- */
 .page__map {
     background:  #242B33;
