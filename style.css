@@ -762,10 +762,11 @@ input::placeholder {
     }
 }
 /* ----------------------------- MOBILE ------------------------- */
-@media (max-width: 415px) {
+@media (max-width: 500px) {
     .header {
         position: fixed;
-        background-color:rgba(36, 43, 51, 0.9);
+        /* background-color:rgba(36, 43, 51, 0.9); */
+        background-color:rgb(36, 43, 51);
     }
     .header__logo {
         font-size: 30px;
