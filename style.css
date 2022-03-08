@@ -1,7 +1,7 @@
 @font-face {
 
     font-family: 'PostNoBillsJaffna';
-    src: url('/assets/fonts/postnobillsjaffna/PostNoBillsJaffna-Regular.ttf');
+    src: url('./assets/fonts/postnobillsjaffna/PostNoBillsJaffna-Regular.ttf');
     font-weight:normal;
     font-display:swap;
     font-style: normal;
@@ -364,7 +364,7 @@ p {
 }
 /* ------------------------- BODY FORM --------------------------------------------------------------- */
 .page__form {
-    background: center no-repeat url(/assets/images/form-bg.jpg);
+    background: center no-repeat url(./assets/images/form-bg.jpg);
     background-size: cover;
 }
 .form__title {
