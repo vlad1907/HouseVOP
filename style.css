@@ -364,7 +364,7 @@ p {
 }
 /* ------------------------- BODY FORM --------------------------------------------------------------- */
 .page__form {
-    background: center no-repeat url(/assets/images/form-bg.jpg);
+    background: center no-repeat url(./assets/images/form-bg.jpg);
     background-size: cover;
 }
 .form__title {
